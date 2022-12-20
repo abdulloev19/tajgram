@@ -99,7 +99,6 @@ section > .container > .content > .content_header > .content_header_item {
   background-color: aliceblue;
   margin: 0 10px;
   border: 2px solid rgb(18, 195, 162);
-
 }
 section > .container > .content > .content_main {
   width: 100%;
@@ -113,29 +112,51 @@ section > .container > .content > .content_main > .content_main_item {
   border-radius: 10px;
 }
 
-section > .container > .content > .content_main > .content_main_item  .content_main_item_header{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
+section
+  > .container
+  > .content
+  > .content_main
+  > .content_main_item
+  .content_main_item_header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
 
-section > .container > .content > .content_main > .content_main_item  .content_main_item_header > .content_main_item_header_logo{
-    width: 50px;
-    height: 50px;
-    background-color: aliceblue;
-    border-radius: 50%;
+section
+  > .container
+  > .content
+  > .content_main
+  > .content_main_item
+  .content_main_item_header
+  > .content_main_item_header_logo {
+  width: 50px;
+  height: 50px;
+  background-color: aliceblue;
+  border-radius: 50%;
 }
 
-section > .container > .content > .content_main > .content_main_item  .content_main_item_header > .content_main_item_header_text {
-    margin-left: 10px;
+section
+  > .container
+  > .content
+  > .content_main
+  > .content_main_item
+  .content_main_item_header
+  > .content_main_item_header_text {
+  margin-left: 10px;
 }
 
-section > .container > .content > .content_main > .content_main_item > .content_main_item_photo{
-    width: 100%;
-    height: 780px;
-    background-color: #cde8ff;
+section
+  > .container
+  > .content
+  > .content_main
+  > .content_main_item
+  > .content_main_item_photo {
+  width: 100%;
+  height: 780px;
+  background-color: #cde8ff;
 }
 
 /* sidebar */
@@ -143,7 +164,7 @@ section > .container > .sidebar {
   width: 100%;
   height: 100%;
 }
-section > .container > .sidebar > .sidebar_content_accaunt{
+section > .container > .sidebar > .sidebar_content_accaunt {
   width: 100%;
   height: 70px;
   margin-top: 30px;
@@ -152,14 +173,22 @@ section > .container > .sidebar > .sidebar_content_accaunt{
   justify-content: space-around;
 }
 
-section > .container > .sidebar > .sidebar_content_accaunt > .sidebar_content_accaunt_logo{
+section
+  > .container
+  > .sidebar
+  > .sidebar_content_accaunt
+  > .sidebar_content_accaunt_logo {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background-color: #cde8ff;
 }
 
-section > .container > .sidebar > .sidebar_content_accaunt > .sidebar_content_accaunt_text{
+section
+  > .container
+  > .sidebar
+  > .sidebar_content_accaunt
+  > .sidebar_content_accaunt_text {
   width: 150px;
   height: 100%;
   display: flex;
@@ -167,16 +196,24 @@ section > .container > .sidebar > .sidebar_content_accaunt > .sidebar_content_ac
   justify-content: center;
 }
 
-section > .container > .sidebar > .sidebar_content_accaunt > .sidebar_content_switch{
+section
+  > .container
+  > .sidebar
+  > .sidebar_content_accaunt
+  > .sidebar_content_switch {
   color: #007bff;
 }
 
-section > .container > .sidebar > .sidebar_recommendations{
+section > .container > .sidebar > .sidebar_recommendations {
   width: 100%;
   height: 500px;
 }
 
-section > .container > .sidebar > .sidebar_recommendations > .sidebar_recommendations_header{
+section
+  > .container
+  > .sidebar
+  > .sidebar_recommendations
+  > .sidebar_recommendations_header {
   width: 100%;
   height: 30px;
   display: flex;
@@ -185,32 +222,83 @@ section > .container > .sidebar > .sidebar_recommendations > .sidebar_recommenda
   padding: 0 10px;
 }
 
-section > .container > .sidebar > .sidebar_recommendations > .sidebar_recommendations_content
- > .sidebar_recommendations_content_item{
+section
+  > .container
+  > .sidebar
+  > .sidebar_recommendations
+  > .sidebar_recommendations_content
+  > .sidebar_recommendations_content_item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
 }
 
-section > .container > .sidebar > .sidebar_recommendations > .sidebar_recommendations_content
- > .sidebar_recommendations_content_item > .sidebar_recommendations_content_item_accaunt{
+section
+  > .container
+  > .sidebar
+  > .sidebar_recommendations
+  > .sidebar_recommendations_content
+  > .sidebar_recommendations_content_item
+  > .sidebar_recommendations_content_item_accaunt {
   display: flex;
   align-items: center;
- }
+}
 
-section > .container > .sidebar > .sidebar_recommendations > .sidebar_recommendations_content
- > .sidebar_recommendations_content_item > .sidebar_recommendations_content_item_accaunt > .sidebar_recommendations_content_item_logo{
+section
+  > .container
+  > .sidebar
+  > .sidebar_recommendations
+  > .sidebar_recommendations_content
+  > .sidebar_recommendations_content_item
+  > .sidebar_recommendations_content_item_accaunt
+  > .sidebar_recommendations_content_item_logo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #cde8ff;
   margin-right: 5px;
- }
+}
 
- section > .container > .sidebar > .sidebar_recommendations > .sidebar_recommendations_header > .sidebar_recommendations_header_text1{
+section
+  > .container
+  > .sidebar
+  > .sidebar_recommendations
+  > .sidebar_recommendations_header
+  > .sidebar_recommendations_header_text1 {
   color: #8a8a8a;
 }
- section > .container > .sidebar > .sidebar_recommendations > .sidebar_recommendations_content > .sidebar_recommendations_content_item > .sidebar_recommendations_content_fallow{
+section
+  > .container
+  > .sidebar
+  > .sidebar_recommendations
+  > .sidebar_recommendations_content
+  > .sidebar_recommendations_content_item
+  > .sidebar_recommendations_content_fallow {
   color: #007bff;
+}
+
+@media screen and (max-width: 1000px) {
+  section > .container {
+    width: 100vw;
+    display: flex;
+  }
+
+  section > .container > .content{
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  section > .container > .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px){
+  header > .header_content > .search {
+    display: none;
+  }
+  section > .container > .content{
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
