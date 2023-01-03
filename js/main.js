@@ -1,69 +1,44 @@
-import { headerCompanent } from "./headerCompanent.js";
-import { sidebarCompanent } from "./sidebarCompanent.js";
+import { accauntContentCompanent } from "./accauntContentCompanent.js";
+import { accauntsCompanent } from "./accauntsCompanent.js";
+import { allData } from "./allData.js";
+import { directCompanent } from "./directCompanent.js";
+import { editCompanent } from "./editCompanent.js";
+import { exploreCompanent } from "./exploreCompanent.js";
+import { headerCompanent } from './headerCompanent.js';
+import { profilCompanent } from "./profilCompanent.js";
 
-let allData = {
-
-    myAccaunt: {
-        firstName: "Ismoiljon",
-        lastName: "Abdulloev",
-        login: "abdulloev.19",
-
-    },
-// All Posts
-    allPosts: [
-        
-    {
-      login: "accauntlogin",
-      post: [
-        {
-          photoSrc: "",
-          title: "Описание поста...",
-          like: 0,
-          soundname: "Оригинальная аудиодорожка",
-          comment: [
-            {
-              accauntLogin: "",
-              comment: "",
-            },
-          ],
-        },
-      ],
-    },
+const routes = [
+  { path: "/", component: accauntsCompanent },
+  { path: "/home", component: accauntContentCompanent },
+  { path: "/directinbox", component: directCompanent },
+  { path: "/explore", component: exploreCompanent },
+  { path: `/${allData.myAccaunt.login}`, component: profilCompanent },
+  { path: "/edit", component: editCompanent },
+];
 
 
-    {
-      login: "accauntlogin",
-      post: [
-        {
-          photoSrc: "",
-          title: "Описание поста...",
-          like: 0,
-          soundname: "Оригинальная аудиодорожка",
-          comment: [
-            {
-              accauntLogin: "",
-              comment: "",
-            },
-          ],
-        },
-      ],
-    },
+const router = VueRouter.createRouter({
+  // предоставляем реализацию истории посещений
+  history: VueRouter.createWebHistory(),
+  routes,
+});
 
 
-
-  ],
-// All Posts
-
-};
 
 let myapp = {
   data() {
     return allData;
   },
   components: {
+    "accaunt-content-companent": accauntContentCompanent,
     "header-companent": headerCompanent,
-    "sidebar-companent": sidebarCompanent,
+    "direct-companent": directCompanent,
+    "explore-companent": exploreCompanent,
+    "profil-companent": profilCompanent,
   },
 };
 
-Vue.createApp(myapp).mount("#app");
+const app = Vue.createApp(myapp);
+
+app.use(router);
+app.mount("#app");
