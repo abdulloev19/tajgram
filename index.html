@@ -7,66 +7,13 @@
     <title>INSTAGRAM TJ | Ismoiljon Abdulloev</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <div>
-    <div id="app">
-      <header-companent></header-companent>
-    <section>
-      <div class="container">
-        <div class="content">
-          <div class="content_header">
-            <div class="content_header_item"></div>
-          </div>
-          <div class="content_main">
-
-
-
-            <div v-for="item in allPosts" class="content_main_item">
-              <div class="content_main_item_header">
-                <div class="content_main_item_header_logo"></div>
-                <div class="content_main_item_header_text">
-                  <div class="content_main_item_header_text_login">
-                    {{item.login}}
-                  </div>
-                  <div class="content_main_item_header_text_soundname">
-                    {{item.post[0].soundname}}
-                  </div>
-                </div>
-              </div>
-              <div class="content_main_item_photo"></div>
-              <div class="action">
-                <div class="left">
-                  <div class="like"></div>
-                  <div class="comment"></div>
-                  <div class="repost"></div>
-                </div>
-                <div class="save"></div>
-              </div>
-              <div class="opisaniye">
-                <p>
-                  <span>
-                    {{item.login}}
-                  </span>
-                  {{item.post[0].title}}
-                </p>
-              </div>
-              <div class="commentAll">
-                <span>Посметреть все комментарии({{ item.post[0].comment.length }})</span>
-              </div>
-            </div>
-
-
-
-
-            <!-- <div class="content_main_item"></div>
-            <div class="content_main_item"></div>
-            <div class="content_main_item"></div> -->
-          </div>
-        </div>
-        <sidebar-companent></sidebar-companent>
-      </div>
-    </section>
+     <div id="app" >
+       <router-view></router-view>
   </div>
-    <script src="js/vue.global.prod.js"></script>
-    <script  type="module" src="js/main.js"></script>
+  <script src="js/vue.global.prod.js"></script>
+  <script src="js/vue-router.js"></script>
+  <script type="module" src="js/main.js"></script>
   </body>
 </html>
+
+
